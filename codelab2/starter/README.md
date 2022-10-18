@@ -10,11 +10,19 @@ to verify the news headline as either coming from verified source or not.
 ## Usage
 
 1. Download the news-source-verification SavedModel from this [codelab](https://colab.research.google.com/drive/1B7Chznw07H83dp6f8fOZCIvkMJ7K-KwY?usp=sharing).
-2. Start TF Serving with: `docker run -t --rm -p 8500:8500 -p 8501:8501 -v
-   "PATH/TO/SAVEDMODEL:/models/news-source-verification" -e MODEL_NAME=news-source-verification
-   tensorflow/serving`.
+
+#### Start TensorFlow Serving
+In your terminal, start TensorFlow Serving with Docker, but replace the `PATH/TO/SAVEDMODEL` placeholder with the absolute path of the `mm_runam_savedmodel` folder on your computer.
+
+2. Start TF Serving with: 
+- `docker pull tensorflow/serving`
+- `docker run -t --rm -p 8500:8500 -p 8501:8501 -v
+   "PATH/TO/SAVEDMODEL:/models/spam-detection" -e MODEL_NAME=spam-detection
+   tensorflow/serving`.  
+
 3. Go into 'lib/proto' folder and run 'generate_grpc_stub_dart.sh' to generate the gRPC
    client stub.
 4. Start Android emulator and run the app.
 5. If you are not using an Android emulator, make sure to replace '10.0.2.2'
    with your TF Serving host's IP address.
+
