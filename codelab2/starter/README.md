@@ -20,7 +20,7 @@ In your terminal, start TensorFlow Serving with Docker, but replace the `PATH/TO
    "PATH/TO/SAVEDMODEL:/models/news-source-verification" -e MODEL_NAME=news-source-verification
    tensorflow/serving`.  
 
-3. Go into 'lib/proto' folder and run 'generate_grpc_stub_dart.sh' to generate the gRPC
+3. Go into `lib/proto` folder and run `generate_grpc_stub_dart.sh` to generate the gRPC
    client stub.
 4. Start Android emulator and run the app.
 5. If you are not using an Android emulator, make sure to replace '10.0.2.2'
