@@ -17,7 +17,7 @@ In your terminal, start TensorFlow Serving with Docker, but replace the `PATH/TO
 2. Start TF Serving with: 
 - `docker pull tensorflow/serving`
 - `docker run -t --rm -p 8500:8500 -p 8501:8501 -v
-   "PATH/TO/SAVEDMODEL:/models/spam-detection" -e MODEL_NAME=spam-detection
+   "PATH/TO/SAVEDMODEL:/models/news-source-verification" -e MODEL_NAME=news-source-verification
    tensorflow/serving`.  
 
 3. Go into 'lib/proto' folder and run 'generate_grpc_stub_dart.sh' to generate the gRPC

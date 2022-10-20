@@ -22,12 +22,12 @@ const restPort = 8501;
 const modelName = 'news-source-verification';
 const signatureName = 'serving_default';
 
-const classificationThreshold = 0.80;
+const classificationThreshold = 0.90;
 const vocabFile = 'assets/vocab.txt';
 const maxSentenceLength = 50;
 
 const String initialPrompt =
-    'Enter a news headline and tap the verify button. The news verification model will determine if the headline is from verified source or not.';
+    'Enter a news headline and tap the verify button. Our AI model will predict if the headline is from verified source or not.';
 
 void main() => runApp(const TFServingDemo());
 
