@@ -22,7 +22,7 @@ const restPort = 8501;
 const modelName = 'news-source-verification';
 const signatureName = 'serving_default';
 
-const classificationThreshold = 0.90;
+const classificationThreshold = 0.85;
 const vocabFile = 'assets/vocab.txt';
 const maxSentenceLength = 50;
 
